@@ -1,0 +1,111 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 500px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+  background-color: #97743a;
+}
+
+/*p { text-shadow: 1px 1px 1px #000; }*/
+
+/* ////////////////////////////////////////////////////
+///////////////// MY CSS STYLES /////////////////////*/
+
+.image-wrapper{
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+/* centers writing on top image header */
+#top-header{
+  padding-top:23%;
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+}
+/* centers writing on middle image header */
+#middle-header{
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+}
+/* centers writing on botttom image header */
+#bottom-header{
+  color: black;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+
+
+/* social media icon size */
+.github-png{
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.linkedin-round-png{
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.email-png{
+  max-height: 30px;
+  max-width: 30px;
+}
+
