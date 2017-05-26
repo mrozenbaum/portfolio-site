@@ -54,7 +54,7 @@ p {
 
 footer.page-footer {
   margin: 0;
-  background-color: #97743a;
+  background-color: #fff;
 }
 
 /*p { text-shadow: 1px 1px 1px #000; }*/
@@ -84,6 +84,11 @@ footer.page-footer {
   font-weight: bold;
   font-size: 35px;
 }
+/* icon styling for skills/ technologies */
+.skill-icon{
+  max-height: 50px;
+  max-width: 50px;
+}
 /* centers writing on botttom image header */
 #bottom-header{
   color: black;
@@ -97,6 +102,9 @@ footer.page-footer {
 .github-png{
   max-height: 30px;
   max-width: 30px;
+  /*background: #fff;
+  border: 1px solid; 
+  border-color: #fff black black #fff*/
 }
 
 .linkedin-round-png{
@@ -109,3 +117,11 @@ footer.page-footer {
   max-width: 30px;
 }
 
+/* copyright footer styles */
+.copyright{
+  text-align: center;
+}
+.copyright:hover{
+  font-size: 20px;
+}
+/*div#button {background: #888; border: 1px solid; border-color: #999 #777 #777 #999 }*/
