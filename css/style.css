@@ -59,9 +59,21 @@ footer.page-footer {
 
 /*p { text-shadow: 1px 1px 1px #000; }*/
 
-/* ////////////////////////////////////////////////////
-///////////////// MY CSS STYLES /////////////////////*/
 
+
+/* ////////////////////////////////////////////////////
+///////////////// MY CSS STYLES ///////////////////////
+/////////////////////////////////////////////////////*/
+
+.small-about-home-page {
+  /*margin: 20px;*/
+}
+
+/* skills and tech icons on home page */
+.skill-icon-wrapper{
+  text-align: center;
+}
+/* image styling on abstrach background on home page */
 .image-wrapper{
   opacity: 0.4;
   top: 0;
@@ -71,12 +83,15 @@ footer.page-footer {
   position: absolute;
   z-index: -1;   
 }
+#big-icon-wrapper{
+  margin-top: 20px;
+}
 /* centers writing on top image header */
 #top-header{
   padding-top:23%;
   color: black;
-  font-weight: bold;
-  font-size: 35px;
+  font-weight:;
+  font-size: 25px;
 }
 /* centers writing on middle image header */
 #middle-header{
@@ -86,8 +101,9 @@ footer.page-footer {
 }
 /* icon styling for skills/ technologies */
 .skill-icon{
-  max-height: 50px;
-  max-width: 50px;
+  max-height: 70px;
+  max-width: 70px;
+  padding:5px;
 }
 /* centers writing on botttom image header */
 #bottom-header{
@@ -95,26 +111,36 @@ footer.page-footer {
   font-weight: bold;
   font-size: 35px;
 }
+/* styles for social icons in top menu */
 
-
+.top-nav-menu-links{
+  font-weight: bold;
+  color: black;
+}
 
 /* social media icon size */
 .github-png{
-  max-height: 30px;
-  max-width: 30px;
-  /*background: #fff;
-  border: 1px solid; 
-  border-color: #fff black black #fff*/
+  max-height: 20px;
+  max-width: 20px;
+  background: #fff;
+  border: 1px solid white;
+  border-radius: 25%;
 }
 
 .linkedin-round-png{
-  max-height: 30px;
-  max-width: 30px;
+  max-height: 20px;
+  max-width: 20px;
+  background: #fff;
+  border: 1px solid lightblue;
+  border-radius: 25%;
 }
 
 .email-png{
-  max-height: 30px;
-  max-width: 30px;
+  max-height: 20px;
+  max-width: 20px;
+  background: #fff;
+  border: 1px solid white;
+  border-radius: 25%; 
 }
 
 /* copyright footer styles */

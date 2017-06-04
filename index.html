@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head ng-app="PortfolioApp">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Miriam Rozenbaum, Software Developer</title>
+  <title>Miriam Rozenbaum, Software Developer and UI/UX designer</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,58 +12,44 @@
 
 </head>
 
-  <!-- <div class="fixed-action-btn"> -->
-    <!-- <a class="btn-floating btn-large pulse red"> -->
-      <!-- menu drop down -->
-      <!-- <i class="large material-icons">menu</i> -->
-    <!-- </a> -->
-    <!-- <ul> -->
-      <!-- contact -->
-      <!-- <li><a href="partials/contact.html" class="btn-floating blue"><i class="material-icons">contact_phone</i></a></li> -->
-      <!-- blog -->
-      <!-- <li><a href="partials/blog.html" class="btn-floating green"><i class="material-icons">forum</i></a></li> -->
-      <!-- portfolio -->
-      <!-- <li><a href="partials/work.html" class="btn-floating pink"><i class="material-icons">work</i></a></li> -->
-      <!-- about -->
-      <!-- <li><a href="partials/about.html" class="btn-floating yellow darken-1"><i class="material-icons">info</i></a></li> -->
-      <!-- home -->
-    <!--   <li><a href="index.html" class="btn-floating purple"><i class="material-icons">star</i></a></li>
-    </ul>
-  </div> -->
-
-
-
-
 <body>
 <!--   Main menu section   -->
   <div class="navbar-fixed">
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo"></a>
+      <div class="top-nav-menu-links">
       <ul class="right hide-on-med-and-down">
-        <li><a href="#" class="collection-item">Home</a></li>
-        <li><a href="#" class="collection-item">About</a></li>
-        <li><a href="#" class="collection-item">Portfolio</a></li>
-        <li><a href="#" class="collection-item">Blog</a></li>
-        <li><a href="#" class="collection-item">Contact</a></li>
+        <li class="active"><a href="index.html" class="collection-item">Home</a></li>
+        <li><a href="partials/about.html" class="collection-item">About</a></li>
+        <!-- drop down menu for projects and resume -->
+        <ul id="dropdown1" class="dropdown-content">
+        <li><a href="partials/projects.html" class="collection-item">Projects</a></li>
+        <li><a href="images/resume.pdf" class="collection-item">Resume</a></li>
+        </ul>
+        <li><a href="images/resume.pdf" class="collection-item">Blog</a></li>
+        <li><a href="partials/contact.html" class="collection-item">Contact</a></li>
+        <!-- Dropdown Trigger -->
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Portfolio<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
-      <ul>
+      </div>
+      <div class="top-nav-social-icons">
+      <ul class="left">
             <!-- github social icon -->
-            <li><a class="scale-transition scale-in" href="https://github.com/mrozenbaum"><img src="images/social_icons/Github-square.png" class="github-png"></a>
-            </li>
+            <li><a class="scale-transition scale-in" href="https://github.com/mrozenbaum"><img src="images/social_icons/Github-square.png" class="github-png"></a></li>
             <!-- linkedin social icon -->
             <li><a class="scale-transition scale-in" href="https://www.linkedin.com/in/miriam-rozenbaum-250253103/"><img src="images/social_icons/linkedin_blue_square.png" class="linkedin-round-png"></a></li>
             <!-- email social icon -->
             <li><a class="white-text" href="mailto:mirirozenbaum5@gmail.com?Subject=Hello%20again"><img src="images/social_icons/Mail.png" class="email-png"></a></li>
       </ul>
+      </div>
   </div>    
       <!--   Drop Down Menu for Mobile   -->
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="partials/about.html">About</a></li>
+        <li><a href="partials/work.html">Portfolio</a></li>
+        <li><a href="partials/blog.html">Blog</a></li>
+        <li><a href="partials/contact.html">Contact</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -73,7 +59,10 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light center-align" id="top-header">Miriam Rozenbaum, Software Developer.</h5>
+          <div id="top-header">
+          <h1 class="header col s12 light center-align" id="">Miriam Rozenbaum</h1>
+          <h4 class="header col s12 light center-align" id="">Software Developer and UI-UX designer</h4>
+          </div>
         </div>
       </div>
     </div>
@@ -85,74 +74,108 @@
   <div class="container">
     <div class="section">
 
-      <!--   Technologies/ Skills Section   -->
+      <!--   Small about on home page   -->
+      <div class="small-about-home-page">
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <div class="collection">
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/JavaScript.png" alt="javascript icon"></a>
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Jquery.png" alt="jquery icon"></a>
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Angular.png" alt="angular icon"></a>
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Wordpress.png" alt="wordpress icon"></a>
-            </div>
-          </div>
+        <div><h5 class="header col s12 light center-align" id="middle-header-header">I build and enhance <b>websites and applications.</b></h5>
+        <br>
+        <h5 class="header col s12 light center-align" id="middle-header-header">I enjoy taking an <b>idea</b> and crafting it into something <b>useable.</b></h5>
+        <br>
+        <h5 class="header col s12 light center-align" id="middle-header-header">I make things beatiful, functional, and fast.</h5>
+        <br>
+        <h5 class="header col s12 light center-align" id="middle-header-header">It is important for me to stay current with new technology, and always add onto my skill set.</h5>
         </div>
-        <!--   Technologies/ Skills Section   -->
-        <div class="col s12 m4">
-          <div class="icon-block">
-              <div class="collection">
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Bootstrap.png" alt="bootstrap icon"></a>
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/materialize.png" alt="materialize icon"></a>
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Sass.png" alt="sass icon"></a>
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Python.png" alt="python icon"></a>
-              <!-- <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/.jpg" alt="django icon"></a> -->
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/DB.png" alt="database icon"></a>
-            </div>
-          </div>
-        </div>
-        <!--   Technologies/ Skills Section   -->
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <div class="collection">
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Html5.png" alt="html5 icon"></a>
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Css.png" alt="css icon"></a>
-              <!-- <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/.jpg" alt="npm icon"></a> -->
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Grunt.png" alt="grunt icon"></a>
-              <a href="#!" class="collection-item"><img class="skill-icon" src="images/social_icons/Git.png" alt="git icon"></a> 
-            </div>
-          </div>
-        </div>
+      </div>  
       </div>
     </div>
   </div>
-
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light center-align" id="middle-header">A modern responsive front-end framework based on Material Design</h5>
+          <div>
+         
+          </div>
         </div>
       </div>
     </div>
     <!--   Second image logo   -->
     <div class="image-wrapper">
-    <div class="parallax"><img src="images/bg_abstract.jpg" alt="Miriam Rozenbaum Logo" id="logo-image"></div>
+    <div class="parallax"><img src="images/bg_abstract.jpg" alt="Unknown artist Logo" id="logo-image"></div>
     </div>
   </div>
 
+  <!--   Technologies/ Skills Section   -->
   <div class="container">
     <div class="section">
-
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send black-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4>Technologies and skills.</h4>
+            <div id="big-icon-wrapper">
+              <div class="col s12 m4">
+                <div class="icon-block">
+                  <div class="skill-icon-wrapper">
+                  <div>
+                    <img class="skill-icon" src="images/social_icons/JavaScript.png" alt="javascript icon">
+                  </div>
+                  <div>  
+                    <img class="skill-icon" src="images/social_icons/Jquery.png" alt="jquery icon">
+                  </div>
+                  <div>  
+                    <img class="skill-icon" src="images/social_icons/Angular.png" alt="angular icon">
+                  </div>
+                  <div>  
+                    <img class="skill-icon" src="images/social_icons/Wordpress.png" alt="wordpress icon">
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <div class="skill-icon-wrapper">
+                <div>
+                  <img class="skill-icon" src="images/social_icons/Html5.png" alt="html5 icon">
+                </div>
+                <div>
+                  <img class="skill-icon" src="images/social_icons/Css.png" alt="css icon">
+                </div>
+                <div>
+                  <img class="skill-icon" src="images/social_icons/Grunt.png" alt="grunt icon">
+                </div>
+                <div>
+                  <img class="skill-icon" src="images/social_icons/Git.png" alt="git icon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+              <div class="skill-icon-wrapper">
+              <div>
+                <img class="skill-icon" src="images/social_icons/Bootstrap.png" alt="bootstrap icon">
+              </div>
+              <div>  
+                <img class="skill-icon" src="images/social_icons/materialize.png" alt="materialize icon">
+              </div>
+              <div>  
+                <img class="skill-icon" src="images/social_icons/Sass.png" alt="sass icon">
+              <div>
+                <img class="skill-icon" src="images/social_icons/Python.png" alt="python icon">
+              </div>
+              <div>  
+                <img class="skill-icon" src="images/social_icons/DB.png" alt="database icon">
+              </div>  
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
+  </div>
+  </div>
   </div>
 
 
@@ -160,44 +183,71 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light center-align" id="bottom-header">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light center-align" id="bottom-header"></h5>
         </div>
       </div>
     </div>
     <!--   Third image logo   -->
     <div class="image-wrapper">
-    <div class="parallax"><img src="images/bg_abstract.jpg" alt="Miriam Rozenbaum Logo" id="logo-image"></div>
+    <div class="parallax"><img src="images/bg_abstract.jpg" alt="Unknown artist Logo" id="logo-image"></div>
     </div>
   </div>
 
+ <!-- footer with links and bio, copyright. -->
   <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="black-text">Company Bio</h5>
-          <p class="black-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="black-text">Technologies and skills</h5>
+            <div id="big-icon-wrapper">
 
+
+               <img class="skill-icon" src="images/social_icons/Bootstrap.png" alt="bootstrap icon">
+              </div>
+              <div>  
+                <img class="skill-icon" src="images/social_icons/materialize.png" alt="materialize icon">
+              </div>
+              <div>  
+                <img class="skill-icon" src="images/social_icons/Sass.png" alt="sass icon">
+              <div>
+                <img class="skill-icon" src="images/social_icons/Python.png" alt="python icon">
+              </div>
+              <div>  
+                <img class="skill-icon" src="images/social_icons/DB.png" alt="database icon">
+              </div>
+
+
+            </div>  
 
         </div>
         <div class="col l3 s12">
           <h5 class="black-text">Explore</h5>
           <ul>
-            <li><a class="black-text" href="#!">Home</a></li>
-            <li><a class="black-text" href="#!">About</a></li>
-            <li><a class="black-text" href="#!">Portfolio</a></li>
-            <li><a class="black-text" href="#!">Contact</a></li>
-            <li><a class="black-text" href="#!">Blog</a></li>
+            <li><a class="black-text" href="index.html">Home</a></li>
+            <li><a class="black-text" href="partials/about.html">About</a></li>
+            <li><a class="black-text" href="partials/work.html">Portfolio</a></li>
+            <li><a class="black-text" href="partials/blog.html">Blog</a></li>
+            <li><a class="black-text" href="partials/contact.html">Contact</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="black-text"></h5>
           <ul>
             <!-- github social icon -->
-            <li><a class="black-text" href="https://github.com/mrozenbaum"><img src="images/social_icons/Github.png" class="github-png"></a></li>
+            <li>
+              <a class="scale-transition scale-in" href="https://github.com/mrozenbaum">Github
+              </a>
+            </li>
             <!-- linkedin social icon -->
-            <li><a class="black-text" href="https://www.linkedin.com/in/miriam-rozenbaum-250253103/"><img src="images/social_icons/linkedin_blue_square.png" class="linkedin-round-png"></a></li>
+            <li>
+              <a class="scale-transition scale-in" href="https://www.linkedin.com/in/miriam-rozenbaum-250253103/">Linkedin
+              </a>
+            </li>
             <!-- email social icon -->
-            <li><a class="black-text" href="mailto:mirirozenbaum5@gmail.com?Subject=Hello%20again"><img src="images/social_icons/email_blue.png" class="email-png"></a></li>
+            <li>
+              <a class="scale-transition scale-in" href="mailto:mirirozenbaum5@gmail.com?Subject=Hello%20again">Email
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -211,6 +261,15 @@
 
 
   <!--  Scripts-->
+
+  <!-- Jquery script tag -->
+  <script type="text/javascript" src="/lib/node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- Angular script tags -->
+  <script type="text/javascript" src="/lib/node_modules/angular/angular.min.js"></script>
+  <script type="text/javascript" src="/lib/node_modules/angular-route/angular-route.min.js"></script>
+
+
+  <!-- Scripts for materialize template -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
